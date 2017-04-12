@@ -1,0 +1,55 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "com.example.vm.panorama"
+        minSdkVersion 14
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.1.0'
+    compile 'com.android.support:design:23.1.0'
+    compile files('libs/commons-lang3-3.4.jar')
+    compile files('libs/eventbus.jar')
+    compile files('libs/gluegen-rt.jar')
+    compile files('libs/j-ogg-oggd.jar')
+    compile files('libs/j-ogg-vorbisd.jar')
+    compile files('libs/jbullet.jar')
+    compile files('libs/jglfont-core.jar')
+    compile files('libs/jinput.jar')
+    compile files('libs/jme3-android.jar')
+    compile files('libs/jME3-blender.jar')
+    compile files('libs/jME3-core.jar')
+    compile files('libs/jME3-effects.jar')
+    compile files('libs/jME3-jbullet.jar')
+    compile files('libs/jME3-jogg.jar')
+    compile files('libs/jME3-lwjgl.jar')
+    compile files('libs/jME3-networking.jar')
+    compile files('libs/jME3-niftygui.jar')
+    compile files('libs/jME3-plugins.jar')
+    compile files('libs/jME3-terrain.jar')
+    compile files('libs/joal.jar')
+    compile files('libs/jogl-all.jar')
+    compile files('libs/lwjgl.jar')
+    compile files('libs/nifty.jar')
+    compile files('libs/nifty-default-controls.jar')
+    compile files('libs/nifty-examples.jar')
+    compile files('libs/stack-alloc.jar')
+    compile files('libs/vecmath.jar')
+    compile files('libs/xmlpull-xpp3.jar')
+}
